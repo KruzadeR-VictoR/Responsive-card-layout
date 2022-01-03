@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.crd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 10px;
+}
+
+.crd .card {
+  height: 400px;
+  width: 300px;
+  background-color: #e38826;
+  padding: 2rem 3rem;
+  border-radius: 10px 0 0 10px;
+}
+
+.crd .card img {
+  padding: 1rem 0;
+}
+
+.crd .card h2 {
+  padding: 0 0 1rem;
+  color: #f2f2f2;
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.crd .card p {
+  font-size: 15px;
+  text-align: justify;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0 0 4rem;
+}
+
+.crd .card button {
+  cursor: pointer;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.crd .card button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.crd .card:nth-of-type(2) {
+  background-color: #006970;
+  border-radius: 0;
+}
+
+.crd .card:nth-of-type(3) {
+  background-color: #004241;
+  border-radius: 0 10px 10px 0;
+}
+/*# sourceMappingURL=style.css.map */

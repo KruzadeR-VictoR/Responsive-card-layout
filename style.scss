@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+$big-shoulder: "Big Shoulders Display", cursive;
+$deca: "Lexend Deca", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crd {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  .card {
+    height: 400px;
+    width: 300px;
+    background-color: hsl(31, 77%, 52%);
+    padding: 2rem 3rem;
+    border-radius: 10px 0 0 10px;
+    img {
+      padding: 1rem 0;
+    }
+    h2 {
+      padding: 0 0 1rem;
+      color: hsl(0, 0%, 95%);
+      font-size: 2rem;
+      font-family: $big-shoulder;
+    }
+    p {
+      font-size: 15px;
+      text-align: justify;
+      font-family: $deca;
+      color: hsla(0, 0%, 100%, 0.75);
+      padding: 0 0 4rem;
+    }
+    button {
+      cursor: pointer;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: 2px solid hsl(0, 0%, 95%);
+      border-radius: 20px;
+      color: hsla(0, 0%, 100%, 0.75);
+      &:hover {
+        background: hsla(0, 0, 100%, 0.1);
+      }
+    }
+  }
+  .card:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+  }
+  .card:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+  }
+}
