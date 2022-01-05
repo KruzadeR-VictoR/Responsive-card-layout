@@ -10,6 +10,9 @@ $deca: "Lexend Deca", sans-serif;
 }
 body {
   height: 100vh;
+  // position: relative;
+  // top:50%;
+  // transform: translateY(50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,5 +65,22 @@ body {
   .card:nth-of-type(3) {
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 10px 10px 0;
+  }
+}
+
+//| Mobile Responsive
+@media only screen and (max-width: 600px) {
+  body {
+    height: calc(100vh + 100%);
+    margin: 10rem;
+  }
+  .card {
+    border-radius: 10px 10px 0 0 !important;
+  }
+  .card:nth-of-type(2){
+    border-radius: 0 !important;
+  }
+  .card:nth-of-type(3) {
+    border-radius: 0 0 10px 10px !important;
   }
 }
