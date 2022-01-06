@@ -62,14 +62,23 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding: 0.5rem 1rem;
-  background: transparent;
+  background: whitesmoke;
   border: 2px solid #f2f2f2;
   border-radius: 20px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #e38826;
 }
 
 .crd .card button:hover {
   background: rgba(255, 255, 255, 0.1);
+  color: #f2f2f2;
+}
+
+.crd .card .btn-2 {
+  color: #006970;
+}
+
+.crd .card .btn-3 {
+  color: #004241;
 }
 
 .crd .card:nth-of-type(2) {
